@@ -1,10 +1,14 @@
-﻿namespace xadrex_console_project
+﻿using xadrex_console_project.tabuleiro;
+
+namespace xadrex_console_project
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Posicao p = new Posicao(3, 4);
+
+
         }
     }
 }
