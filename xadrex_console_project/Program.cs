@@ -8,7 +8,7 @@ namespace xadrex_console_project
         {
             Posicao p = new Posicao(3, 4);
 
-
+            Console.WriteLine(p.ToString());
         }
     }
 }

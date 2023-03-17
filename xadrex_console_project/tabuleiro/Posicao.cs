@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace xadrex_console_project.tabuleiro
+﻿namespace xadrex_console_project.tabuleiro
 {
-    internal class Posicao
+    class Posicao
     {
         public int Linha { get; set; }
         public int Coluna { get; set; }
@@ -14,10 +8,8 @@ namespace xadrex_console_project.tabuleiro
 
         public Posicao(int linha, int coluna)
         {
-            this.Linha = linha;
-            this.Coluna = coluna;
+            Linha = linha;
+
         }
-
-
     }
 }
