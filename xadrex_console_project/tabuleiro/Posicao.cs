@@ -9,7 +9,7 @@
         public Posicao(int linha, int coluna)
         {
             Linha = linha;
-
+            Coluna = coluna;
         }
     }
 }
