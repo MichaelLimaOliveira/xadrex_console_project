@@ -1,5 +1,4 @@
-﻿
-namespace xadrex_console_project.tabuleiro
+﻿namespace xadrex_console_project.tabuleiro
 {
     enum Cor
     {
