@@ -14,5 +14,10 @@
             Tab = tab;
             this.quantidadeMovimentos = 0;
         }
+
+        public void IncrementarQuantidadeMovimentos()
+        {
+            quantidadeMovimentos++;
+        }
     }
 }
