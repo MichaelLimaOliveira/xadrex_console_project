@@ -30,6 +30,7 @@ namespace xadrex_console_project.xadrez
         {
             Tab.ColocarPeca(new Torre(Tab, Cor.Preta), new PosicaoXadrez('a', 1).ToPosicao());
             Tab.ColocarPeca(new Torre(Tab, Cor.Preta), new PosicaoXadrez('h', 1).ToPosicao());
+            Tab.ColocarPeca(new Rei(Tab, Cor.Preta), new PosicaoXadrez('h', 2).ToPosicao());
 
 
             Tab.ColocarPeca(new Torre(Tab, Cor.Branca), new PosicaoXadrez('a', 8).ToPosicao());
