@@ -16,13 +16,9 @@ namespace xadrex_console_project
                     try
                     {
                         Console.Clear();
-                        Tela.impromirTabuleiro(partida.Tab);
-                        Console.WriteLine();
-                        Console.WriteLine("Turno: " + partida.Turno);
-                        Console.WriteLine("Aguardando jogada: " + partida.JogadorAtual);
+                        Tela.ImprimirPartida(partida);
 
                         Console.WriteLine();
-
                         Console.Write("Origem: ");
                         Posicao origem = Tela.LerPosicaoXadrez().ToPosicao();
                         partida.ValidarPosicaoOrigem(origem);
@@ -30,7 +26,7 @@ namespace xadrex_console_project
                         bool[,] posicoesPossiveis = partida.Tab.peca(origem).MovimentosPosiveis();
 
                         Console.Clear();
-                        Tela.impromirTabuleiro(partida.Tab, posicoesPossiveis);
+                        Tela.ImprimirTabuleiro(partida.Tab, posicoesPossiveis);
 
                         Console.WriteLine();
                         Console.Write("Destino: ");
@@ -48,7 +44,6 @@ namespace xadrex_console_project
             }
             catch (TabuleiroException e)
             {
-
                 Console.WriteLine(e.Message);
             }
 
